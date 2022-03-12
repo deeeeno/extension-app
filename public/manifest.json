@@ -1,0 +1,17 @@
+{
+    "manifest_version" : 2,
+    "name":"demo",
+    "description":"demo",
+    "default_locale":"ko",
+    "version":"1.0.1",
+    "content_scripts":[
+        {
+            "matches":[
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js":["bundle.js"],
+            "run_at":"document_start"
+        }
+    ]
+}
